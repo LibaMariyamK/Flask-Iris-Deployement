@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flower Prediction</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">🌼 Flower Class Prediction 🌼</h1>
+
+    <form action="{{ url_for('predict') }}" method="post" style="text-align: center;">
+        <fieldset style="display: inline-block; padding: 30px 40px; width: 300px; text-align: left;">
+            <legend><strong>Enter Flower Features</strong></legend>
+            
+            <label>Sepal Length</label><br>
+            <input type="number" name="Sepal_Length" placeholder="Enter Sepal Length (in cm)" required style="width: 100%; height: 25px;" /><br><br>
+            
+            <label>Sepal Width</label><br>
+            <input type="number" name="Sepal_Width" placeholder="Enter Sepal Width (in cm)" required style="width: 100%; height: 25px;" /><br><br>
+            
+            <label>Petal Length </label><br>
+            <input type="number" name="Petal_Length" placeholder="Enter Petal Length (in cm)" required style="width: 100%; height: 25px;" /><br><br>
+            
+            <label>Petal Width </label><br>
+            <input type="number" name="Petal_Width" placeholder="Enter Petal Width (in cm)" required style="width: 100%; height: 25px;" /><br><br>
+            
+            <button type="submit" style="width: 40%; height: 35px; display: block; margin: auto;"> Predict </button>
+        </fieldset>
+    </form>
+
+    
+    <h2 style="text-align: center;"> {{ prediction_text }} </h2>
+    
+
+</body>
+</html>
