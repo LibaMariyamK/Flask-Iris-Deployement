@@ -16,6 +16,7 @@ The repository contains the following files and directories:
 - `html_beginners_guide.ipynb` - provides a basic guide on HTML, including form elements and other beginner concepts.
 
 ---
+![My Flask app screenshot](templates/Screenshot.png)
 
 ## How to Run
 1. Clone this repository to your local machine:
